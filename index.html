@@ -1,0 +1,969 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Namlea-Travel</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+    <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Alex+Brush" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/open-iconic-bootstrap.min.css">
+    <link rel="stylesheet" href="css/animate.css">
+    
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="css/magnific-popup.css">
+
+    <link rel="stylesheet" href="css/aos.css">
+
+    <link rel="stylesheet" href="css/ionicons.min.css">
+
+    <link rel="stylesheet" href="css/bootstrap-datepicker.css">
+    <link rel="stylesheet" href="css/jquery.timepicker.css">
+
+    
+    <link rel="stylesheet" href="css/flaticon.css">
+    <link rel="stylesheet" href="css/icomoon.css">
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body>
+    
+  <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">Wisata Buru (Namlea)</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="oi oi-menu"></span> Menu
+      </button>
+
+      <div class="collapse navbar-collapse" id="ftco-nav">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item active"><a href="index.html" class="nav-link">Home</a></li>
+          <li class="nav-item"><a href="about.html" class="nav-link">About</a></li>
+          <li class="nav-item"><a href="tour.html" class="nav-link">Tour</a></li>
+          <li class="nav-item"><a href="hotel.html" class="nav-link">Hotels</a></li>
+		  <li class="nav-item"><a href="kuliner.html" class="nav-link">Kuliner</a></li>
+          <li class="nav-item"><a href="blog.html" class="nav-link">Blog</a></li>
+		  <li class="nav-item"><a href="testimonial.html" class="nav-link">Testimonial</a></li>
+         
+        </ul>
+      </div>
+    </div>
+  </nav>
+    <!-- END nav -->
+    
+    <div class="hero-wrap js-fullheight" style="background-image: url('images/bg_1.jpg')">
+      <div class="overlay"></div>
+      <div class="container">
+        <div class="row no-gutters slider-text js-fullheight align-items-center justify-content-start" data-scrollax-parent="true">
+          <div class="col-md-9 ftco-animate" data-scrollax=" properties: { translateY: '70%' }">
+            <h1 class="mb-4" data-scrollax="properties: { translateY: '30%', opacity: 1.6 }"><strong>Explore <br></strong> Selamat Datang di Pulau Buru</h1>
+            <p data-scrollax="properties: { translateY: '30%', opacity: 1.6 }">Ayo Kunjungi Pulau Buru & Nikmati pengalaman liburan yang berbeda dengan menjelajahi pantai-pantai berpasir putih</p>
+            <div class="block-17 my-4">
+				<form id="search-form" class="d-block d-flex">
+					<div class="fields d-block d-flex">
+					  <div class="textfield-search one-third">
+						<input type="text" id="search-input" class="form-control" placeholder="Ex:Pulau Buru" required>
+					  </div>
+					  <div class="select-wrap one-third">
+						<div class="icon"><span class="ion-ios-arrow-down"></span></div>
+						<select id="search-select" class="form-control" placeholder="Keyword search">
+						  <option value="blog-single.html">Pantai Jikumerasa</option>
+						  <option value="blog-single2.html">Pantai Baikolet</option>
+						  <option value="blog-single1.html">Gunung/Bukit Tatanggo</option>
+						  <option value="blog-single4.html">Aer Terjun Waeura</option>
+						  <option value="blog-single3.html">Pantai Merah Putih</option>
+						  <option value="blog-single5.html">Aer Terjun Hatawano</option>
+						  <option value="blog-single6.html">Danau Rana</option>
+						  <option value="blog-single7.html">Pantai Pal Lima</option>
+						  <option value="hotel-awista.html">Hotel Awista</option>
+						  <option value="hotel-grand-sarah.html">Hotel Grand Sarah</option>
+						  <option value="hotel-haider.html">Penginapan Haider</option>
+						  <option value="hotel-kaynawa.html">Hotel Kay'Nawa</option>
+						  <option value="hotel-rara.html">Penginapan Rara</option>
+						  <option value="kuliner.html">Citra Wangi Resto</option>
+						  <option value="kuliner -mamiri.html">RM Angin Mamiri</option>
+						  <option value="kuliner -halo-cofe.html">Caffe Halo Kofi</option>
+						  <option value="kuliner -dinasty-cofe.html">Dinasty Coffe</option>
+						</select>
+					  </div>
+					</div>
+					<input type="submit" class="search-submit btn btn-primary" value="Search">  
+				  </form>
+				  
+				  <script>
+					document.getElementById('search-form').addEventListener('submit', function(event) {
+					  event.preventDefault(); // Hindari pengiriman form bawaan
+				  
+					  var searchInput = document.getElementById('search-input').value.toLowerCase();
+					  var searchSelect = document.getElementById('search-select').value;
+				  
+					  // Redirect ke halaman berdasarkan input
+					  if (searchInput.includes('pantai jikumerasa')) {
+						window.location.href = 'blog-single.html';
+					  } else if (searchInput.includes('pantai baikolet')) {
+						window.location.href = 'blog-single2.html';
+					  } else if (searchInput.includes('gunung bukit tatanggo')) {
+						window.location.href = 'blog-single1.html';
+					  } else if (searchInput.includes('aer terjun waeura')) {
+						window.location.href = 'blog-single4.html';
+					  } else if (searchInput.includes('pantai merah putih')) {
+						window.location.href = 'blog-single3.html';
+					  } else if (searchInput.includes('aer terjun hatawano')) {
+						window.location.href = 'blog-single5.html';
+					} else if (searchInput.includes('danau rana')) {
+						window.location.href = 'blog-single6.html';
+					} else if (searchInput.includes('pantai pal lima')) {
+						window.location.href = 'blog-single7.html';
+					} else if (searchInput.includes('hotel-awista')) {
+						window.location.href = 'hotel-awista.html';
+					} else if (searchInput.includes('hotel-grand-sarah')) {
+						window.location.href = 'hotel-grand-sarah.html';
+					} else if (searchInput.includes('penginapan-haider')) {
+						window.location.href = 'hotel-haider.html';
+					} else if (searchInput.includes('hotel-kaynawa')) {
+						window.location.href = 'hotel-kaynawa.html';
+					} else if (searchInput.includes('penginapan-rara')) {
+						window.location.href = 'hotel-rara.html';
+					} else if (searchInput.includes('citra-wangi-resto')) {
+						window.location.href = 'kuliner.html';
+					} else if (searchInput.includes('kuliner -mamiri')) {
+						window.location.href = 'kuliner -mamiri.html';
+					} else if (searchInput.includes('caffe -halo-kofi')) {
+						window.location.href = 'kuliner -halo-cofe.html';
+					} else if (searchInput.includes('dinasty -cofe')) {
+						window.location.href = 'kuliner -dinasty-cofe.html';
+					  } else if (searchSelect) {
+						window.location.href = searchSelect;
+					  } else {
+						alert('Halaman tidak ditemukan.');
+					  }
+					});
+				  
+					document.getElementById('search-input').addEventListener('input', function() {
+					  var searchInput = this.value.toLowerCase();
+					  var searchSelect = document.getElementById('search-select');
+					  
+					  for (var i = 0; i < searchSelect.options.length; i++) {
+						var option = searchSelect.options[i].text.toLowerCase();
+						if (option.includes(searchInput)) {
+						  searchSelect.value = searchSelect.options[i].value;
+						  break;
+						}
+					  }
+					});
+				  </script>
+				  
+									
+            </div>
+            <p>Jelajahi Lebih Lanjut</p>
+            <p class="browse d-md-flex">
+            	<span class="d-flex justify-content-md-center align-items-md-center"><a href="kuliner.html"><i class="flaticon-fork"></i>Kuliner</a></span>
+            	<span class="d-flex justify-content-md-center align-items-md-center"><a href="hotel.html"><i class="flaticon-hotel"></i>Penginapan/Hotel</a></span> 
+            	<span class="d-flex justify-content-md-center align-items-md-center"><a href="https://www.google.com/maps/place/Namlea,+Kec.+Namlea,+Kabupaten+Buru,+Maluku/@-3.233398,127.085899,15z/data=!3m1!4b1!4m6!3m5!1s0x2d7212de4c156693:0xe52ca57740e74df!8m2!3d-3.233398!4d127.085899!16s%2Fg%2F120w3kmh?entry=ttu"><i class="flaticon-meeting-point"></i>Namlea-Location</a></span> 
+            	
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <section class="ftco-section services-section bg-light">
+      <div class="container">
+        <div class="row d-flex">
+          <div class="col-md-3 d-flex align-self-stretch ftco-animate">
+            <div class="media block-6 services d-block text-center">
+              <div class="d-flex justify-content-center"><div class="icon"><span class="flaticon-guarantee"></span></div></div>
+              <div class="media-body p-2 mt-2">
+                <h3 class="heading mb-3">Paket Wisata Hemat</h3>
+                <p>Kami juga menawarkan berbagai paket wisata yang dirancang untuk memberikan pengalaman terbaik dengan biaya yang efisien.</p>
+              </div>
+            </div>      
+          </div>
+          <div class="col-md-3 d-flex align-self-stretch ftco-animate">
+            <div class="media block-6 services d-block text-center">
+              <div class="d-flex justify-content-center"><div class="icon"><span class="flaticon-like"></span></div></div>
+              <div class="media-body p-2 mt-2">
+                <h3 class="heading mb-3">Testimoni Pengunjung</h3>
+                <p>Banyak wisatawan yang telah berkunjung ke Pulau Buru berbagi pengalaman mereka tentang bagaimana mereka menikmati liburan yang memukau dengan biaya yang sangat terjangkau.</p>
+              </div>
+            </div>    
+          </div>
+          <div class="col-md-3 d-flex align-self-stretch ftco-animate">
+            <div class="media block-6 services d-block text-center">
+              <div class="d-flex justify-content-center"><div class="icon"><span class="flaticon-detective"></span></div></div>
+              <div class="media-body p-2 mt-2">
+                <h3 class="heading mb-3">Transportasi Murah dan Mudah</h3>
+                <p>Berbagai pilihan transportasi lokal seperti ojek, angkot, dan rental motor tersedia dengan harga yang sangat terjangkau. Eksplorasi seluruh penjuru Pulau Buru tanpa perlu mengkhawatirkan biaya transportasi yang mahal.</p>
+              </div>
+            </div>      
+          </div>
+          <div class="col-md-3 d-flex align-self-stretch ftco-animate">
+            <div class="media block-6 services d-block text-center">
+              <div class="d-flex justify-content-center"><div class="icon"><span class="flaticon-support"></span></div></div>
+              <div class="media-body p-2 mt-2">
+                <h3 class="heading mb-3">Wisata Alam Gratis dan Murah</h3>
+                <p>Sebagian besar destinasi wisata di Pulau Buru, seperti pantai-pantai indah dan bukit-bukit menawan, bisa dinikmati tanpa biaya masuk atau dengan biaya yang sangat minim. Nikmati keindahan alam tanpa harus membayar mahal.</p>
+              </div>
+            </div>      
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    <section class="ftco-section ftco-destination">
+    	<div class="container">
+    		<div class="row justify-content-start mb-5 pb-3">
+          <div class="col-md-7 heading-section ftco-animate">
+          	<span class="subheading">Terpopular</span>
+            <h2 class="mb-4"><strong>Destinasi Unggulan</strong> Di Pulau Buru</h2>
+          </div>
+        </div>
+    		<div class="row">
+    			<div class="col-md-12">
+    				<div class="destination-slider owl-carousel ftco-animate">
+    					<div class="item">
+		    				<div class="destination">
+		    					<a  class="img d-flex justify-content-center align-items-center" style="background-image: url(images/aer\ waeura1.jpg);">
+		    						
+		    					</a>
+		    					<div class="text p-3">
+		    						<h3>Aer Waeura</h3>
+		    					</div>
+		    				</div>
+	    				</div>
+	    				<div class="item">
+		    				<div class="destination">
+		    					<a class="img d-flex justify-content-center align-items-center" style="background-image: url(images/jikumerasa3.jpg);">
+		    							</a>
+		    					<div class="text p-3">
+		    						<h3>Pantai JikuMerasa</h3>
+		    					</div>
+		    				</div>
+	    				</div>
+	    				<div class="item">
+		    				<div class="destination">
+		    					<a class="img d-flex justify-content-center align-items-center" style="background-image: url(images/merahputih2.jpg);">
+		    					</a>
+		    					<div class="text p-3">
+		    						<h3>Pantai Merah Putih</h3>
+		    					</div>
+		    				</div>
+	    				</div>
+	    				<div class="item">
+		    				<div class="destination">
+		    					<a class="img d-flex justify-content-center align-items-center" style="background-image: url(images/baikolet2.jpg);">
+		    						
+		    					</a>
+		    					<div class="text p-3">
+		    						<h3>Pantai Baikolet</h3>
+		    					</div>
+		    				</div>
+	    				</div>
+	    				<div class="item">
+		    				<div class="destination">
+		    					<a  class="img d-flex justify-content-center align-items-center" style="background-image: url(images/tatanggo8.jpg);">
+		    						
+		    					</a>
+		    					<div class="text p-3">
+		    						<h3>Gunung Tatanggo</h3>
+		    					</div>
+		    				</div>
+	    				</div>
+	    				<div class="item">
+		    				<div class="destination">
+		    					<a class="img d-flex justify-content-center align-items-center" style="background-image: url(images/air\ terjun\ hatawano1.jpg);">
+		    						
+		    					</a>
+		    					<div class="text p-3">
+		    						<h3>Air Terjun Hatawano</h3>
+		    					</div>
+		    				</div>
+	    				</div>
+    				</div>
+    			</div>
+    		</div>
+    	</div>
+    </section>
+
+    <section class="ftco-section bg-light">
+    	<div class="container">
+				<div class="row justify-content-start mb-5 pb-3">
+          <div class="col-md-7 heading-section ftco-animate">
+          	<span class="subheading">Transportasi</span>
+            <h2 class="mb-4"><strong>Alat</strong> Transportasi</h2>
+          </div>
+        </div>    		
+    	</div>
+    	<div class="container-fluid">
+    		<div class="row">
+    			<div class="col-sm col-md-6 col-lg ftco-animate">
+    				<div class="destination">
+    					<a class="img img-2 d-flex justify-content-center align-items-center" style="background-image: url(images/pesawat5.jpg);">
+    						
+    					</a>
+    					<div class="text p-3">
+    						<div class="d-flex">
+    							<div class="one">
+		    						<h3>Pesawat</h3>
+		    						<p class="rate">
+		    							<i class="icon-star"></i>
+		    							<i class="icon-star"></i>
+		    							<i class="icon-star"></i>
+		    							<i class="icon-star-o"></i>
+		    							<i class="icon-star-o"></i>
+		    							<span>10 Rating</span>
+		    						</p>
+	    						</div>
+	    						<div class="two">
+	    							
+    							</div>
+    						</div>
+    						<p>Pesawat adalah alat transportasi utama yang dapat menghemat waktu bagi para pengunjung wisata </p>
+    						<p class="days"><span>1 jam</span></p>
+    						<hr>
+    						<p class="bottom-area d-flex">
+    							<span><h6>Pattimura Airport- Bandara Udara Namniwel Namlea</h6></span> 
+    							
+    						</p>
+    					</div>
+    				</div>
+    			</div>
+    			<div class="col-sm col-md-6 col-lg ftco-animate">
+    				<div class="destination">
+    					<a class="img img-2 d-flex justify-content-center align-items-center" style="background-image: url(images/kapal1.jpg);">
+    						
+    					</a>
+    					<div class="text p-3">
+    						<div class="d-flex">
+    							<div class="one">
+		    						<h3>kapal Laut</h3>
+		    						<p class="rate">
+		    							<i class="icon-star"></i>
+		    							<i class="icon-star"></i>
+		    							<i class="icon-star"></i>
+		    							<i class="icon-star"></i>
+		    							<i class="icon-star-o"></i>
+		    							<span>8 Rating</span>
+		    						</p>
+	    						</div>
+	    						<div class="two">
+	    							
+    							</div>
+    						</div>
+    						<p>kapal laut alat transportasi yang dapat menghemat biaya bagi pengunjung wisata yang berada di luar kota namlea</p>
+    						<p class="days"><span>1 hari</span></p>
+    						<hr>
+    						<p class="bottom-area d-flex">
+    							<h6> Slamet Riyadi Ambon - Pelabuhan Besar Namlea</h6> 
+						
+    						
+    						</p>
+    					</div>
+    				</div>
+    			</div>
+    			<div class="col-sm col-md-6 col-lg ftco-animate">
+    				<div class="destination">
+    					<a  class="img img-2 d-flex justify-content-center align-items-center" style="background-image: url(images/speead1.jpg);">
+    					
+    					</a>
+    					<div class="text p-3">
+    						<div class="d-flex">
+    							<div class="one">
+		    						<h3>speed boat</h3>
+		    						<p class="rate">
+		    							<i class="icon-star"></i>
+		    							<i class="icon-star"></i>
+		    							<i class="icon-star"></i>
+		    							<i class="icon-star"></i>
+		    							<i class="icon-star-o"></i>
+		    							<span>8 Rating</span>
+		    						</p>
+	    						</div>
+	    						<div class="two">
+	    						
+    							</div>
+    						</div>
+    						<p>speed boat adalah alat transportasi bagi para pengunjung wisata yang berada di pesisir kota namlea </p>
+    						<p class="days"><span>2-3 jam</span></p>
+    						<hr>
+    						<p class="bottom-area d-flex">
+    							<span><h6>Pelabuhan Ilath - Pelabuhan Merah Putih Nmalea</h6> </span> 
+    							
+    						</p>
+    					</div>
+    				</div>
+    			</div>
+    			<div class="col-sm col-md-6 col-lg ftco-animate">
+    				<div class="destination">
+    					<a class="img img-2 d-flex justify-content-center align-items-center" style="background-image: url(images/motor\ honda1.jpg);">
+    						
+    					</a>
+    					<div class="text p-3">
+    						<div class="d-flex">
+    							<div class="one">
+		    						<h3>Motor</h3>
+		    						<p class="rate">
+		    							<i class="icon-star"></i>
+		    							<i class="icon-star"></i>
+		    							<i class="icon-star"></i>
+		    							<i class="icon-star"></i>
+		    							<i class="icon-star-o"></i>
+		    							<span>8 Rating</span>
+		    						</p>
+	    						</div>
+	    						<div class="two">
+	    					
+    							</div>
+    						</div>
+    						<p>Motor adalah salah satu alat transportasi utama bagi para pengunjung wisata yang berada dalam kota namlea</p>
+    						<p class="days"><span>1 -2 jam</span></p>
+    						<hr>
+    						<p class="bottom-area d-flex">
+    							<span><h6>Pelabuhan Merah Putih Namlea - Pantai Jikumerasa</h6> </span> 
+    							
+    						</p>
+    					</div>
+    				</div>
+    			</div>
+    			<div class="col-sm col-md-6 col-lg ftco-animate">
+    				<div class="destination">
+    					<a class="img img-2 d-flex justify-content-center align-items-center" style="background-image: url(images/mobil2.jpg);">
+    						
+    					</a>
+    					<div class="text p-3">
+    						<div class="d-flex">
+    							<div class="one">
+		    						<h3>Mobil</h3>
+		    						<p class="rate">
+		    							<i class="icon-star"></i>
+		    							<i class="icon-star"></i>
+		    							<i class="icon-star"></i>
+		    							<i class="icon-star"></i>
+		    							<i class="icon-star-o"></i>
+		    							<span>8 Rating</span>
+		    						</p>
+	    						</div>
+	    						<div class="two">
+	    							
+    							</div>
+    						</div>
+    						<p>Mobil adalah alat transportasi bagi para pengunjung wisata yang berada dalam kota namlea</p>
+    						<p class="days"><span>1-2 jam</span></p>
+    						<hr>
+    						<p class="bottom-area d-flex">
+    							<span><h6>Pelabuhan Merah putih Namlea - Pantai jikumerasa</h6></span> 
+    							
+    						</p>
+    					</div>
+    				</div>
+    			</div>
+    		</div>
+    	</div>
+    </section>
+
+ 
+
+
+    <section class="ftco-section">
+    	<div class="container">
+				<div class="row justify-content-start mb-5 pb-3">
+          <div class="col-md-7 heading-section ftco-animate">
+          	<span class="subheading">Penawaran Khusus</span>
+            <h2 class="mb-4"><strong>Hotel</strong> Terpopular &amp; Di Kota Namlea</h2>
+          </div>
+        </div>    		
+    	</div>
+    	<div class="container-fluid">
+    		<div class="row">
+    			<div class="col-sm col-md-6 col-lg ftco-animate">
+    				<div class="destination">
+    					<a href="hotel.html" class="img img-2 d-flex justify-content-center align-items-center" style="background-image: url(images/hotel\ awista1.jpg);">
+    						<div class="icon d-flex justify-content-center align-items-center">
+    							<span class="icon-search2"></span>
+    						</div>
+    					</a>
+    					<div class="text p-3">
+    						<div class="d-flex">
+    							<div class="one">
+		    						<h3><a href="hotel.html">Hotel, Awista</a></h3>
+		    						<p class="rate">
+		    							<i class="icon-star"></i>
+		    							<i class="icon-star"></i>
+		    							<i class="icon-star"></i>
+		    							<i class="icon-star"></i>
+		    							<i class="icon-star-o"></i>
+		    							
+		    						</p>
+	    						</div>
+	    						
+    						</div>
+    						<p>Hotel Awista berlokasi di jalan dermaga baru, Hotel ini terletak di dekat pelabuhan feri</p>
+    						<hr>
+    						<p class="bottom-area d-flex">
+    							 
+    							<span class="ml-auto"><a href="hotel.html">Baca Lebih Lanjut</a></span>
+    						</p>
+    					</div>
+    				</div>
+    			</div>
+    			<div class="col-sm col-md-6 col-lg ftco-animate">
+    				<div class="destination">
+    					<a href="hotel.html" class="img img-2 d-flex justify-content-center align-items-center" style="background-image: url(images/hotel\ gransara2.jpg
+						);">
+    						<div class="icon d-flex justify-content-center align-items-center">
+    							<span class="icon-search2"></span>
+    						</div>
+    					</a>
+    					<div class="text p-3">
+    						<div class="d-flex">
+    							<div class="one">
+		    						<h3><a href="hotel.html">Hotel, Grand Sarah</a></h3>
+		    						<p class="rate">
+		    							<i class="icon-star"></i>
+		    							<i class="icon-star"></i>
+		    							<i class="icon-star"></i>
+		    							<i class="icon-star"></i>
+		    							<i class="icon-star-o"></i>
+		    							</p>
+	    						</div>
+    						</div>
+    						<p>Hotel Grand Sarah ini berletak di Jl. Ahmad Yani No. 18, Namlea, Pulau Buru</p>
+    						<hr>
+    						<p class="bottom-area d-flex">
+    							
+    							<span class="ml-auto"><a href="hotel.html">Baca Lebih Lanjut</a></span>
+    						</p>
+    					</div>
+    				</div>
+    			</div>
+    			<div class="col-sm col-md-6 col-lg ftco-animate">
+    				<div class="destination">
+    					<a href="hotel.html" class="img img-2 d-flex justify-content-center align-items-center" style="background-image: url(images/haider2.jpg);">
+    						<div class="icon d-flex justify-content-center align-items-center">
+    							<span class="icon-search2"></span>
+    						</div>
+    					</a>
+    					<div class="text p-3">
+    						<div class="d-flex">
+    							<div class="one">
+		    						<h3><a href="hotel.html">Penginapan Haider</a></h3>
+		    						<p class="rate">
+		    							<i class="icon-star"></i>
+		    							<i class="icon-star"></i>
+		    							<i class="icon-star"></i>
+		    							<i class="icon-star"></i>
+		    							<i class="icon-star-o"></i>
+		    						</p>
+	    						</div>
+    						</div>
+    						<p>Alamat:Jl. Flamboyan, Namlea, Kec. Namlea, Kabupaten Buru, Maluku</p>
+    						<hr>
+    						<p class="bottom-area d-flex">
+    							
+    							<span class="ml-auto"><a href="hotel.html">Baca Lebih Lanjut</a></span>
+    						</p>
+    					</div>
+    				</div>
+    			</div>
+    			<div class="col-sm col-md-6 col-lg ftco-animate">
+    				<div class="destination">
+    					<a href="hotel.html" class="img img-2 d-flex justify-content-center align-items-center" style="background-image: url(images/hotel\ kaynawa2.jpg);">
+    						<div class="icon d-flex justify-content-center align-items-center">
+    							<span class="icon-search2"></span>
+    						</div>
+    					</a>
+    					<div class="text p-3">
+    						<div class="d-flex">
+    							<div class="one">
+		    						<h3><a href="hotel.html">Hotel, Kay'Nawa</a></h3>
+		    						<p class="rate">
+		    							<i class="icon-star"></i>
+		    							<i class="icon-star"></i>
+		    							<i class="icon-star"></i>
+		    							<i class="icon-star"></i>
+		    							<i class="icon-star-o"></i>
+		    						</p>
+	    						</div>
+    						</div>
+    						<p>Hotel Kay'Nawa  Alamat. : Jl Pilar Samping Kantor PLN Namlea. </p>
+    						<hr>
+    						<p class="bottom-area d-flex">
+    							
+    							<span class="ml-auto"><a href="hotel.html">Baca Lebih Lanjut</a></span>
+    						</p>
+    					</div>
+    				</div>
+    			</div>
+    			<div class="col-sm col-md-6 col-lg ftco-animate">
+    				<div class="destination">
+    					<a href="hotel.html" class="img img-2 d-flex justify-content-center align-items-center" style="background-image: url(images/penginapan\ rara.jpg);">
+    						<div class="icon d-flex justify-content-center align-items-center">
+    							<span class="icon-search2"></span>
+    						</div>
+    					</a>
+    					<div class="text p-3">
+    						<div class="d-flex">
+    							<div class="one">
+		    						<h3><a href="hotel.html">Penginapan Rara</a></h3>
+		    						<p class="rate">
+		    							<i class="icon-star"></i>
+		    							<i class="icon-star"></i>
+		    							<i class="icon-star"></i>
+		    							<i class="icon-star"></i>
+		    							<i class="icon-star-o"></i>
+		    						</p>
+	    						</div>
+    						</div>
+    						<p>Penginapan Rara Alamat Namlea, Kec. Namlea, Kabupaten Buru, Maluku</p>
+    						<hr>
+    						<p class="bottom-area d-flex">
+    							
+    							<span class="ml-auto"><a href="hotel.html">Baca Lebih Lanjut</a></span>
+    						</p>
+    					</div>
+    				</div>
+    			</div>
+    		</div>
+    	</div>
+    </section>
+
+    <section class="ftco-section testimony-section bg-light">
+      <div class="container">
+        <div class="row justify-content-start">
+          <div class="col-md-5 heading-section ftco-animate">
+          	<span class="subheading">Best Directory Website</span>
+            <h2 class="mb-4 pb-3"><strong>kenapa</strong>  Harus Tempat Wisata?</h2>
+            <p>wisata adalah tempat liburan dan investasi terbaik untuk jiwa dan pikiran, Melangkahlah, jelajahi dunia, dan temukan keindahan yang belum pernah kamu bayangkan</p>
+            <p>Jadilah penjelajah di dunia ini, bukan hanya penonton.</p>
+           
+          </div>
+		 <div class="col-md-1"></div>
+          <div class="col-md-6 heading-section ftco-animate">
+          	<span class="subheading">Testimony</span>
+            <h2 class="mb-4 pb-3"><strong>Komentar</strong> Pengunjung</h2>
+          	<div class="row ftco-animate">
+		          <div class="col-md-12">
+		            <div class="carousel-testimony owl-carousel">
+		              <div class="item">
+		                <div class="testimony-wrap d-flex">
+		                  <div class="user-img mb-5" style="background-image: url(images/cinta1.jpg)">
+		                    <span class="quote d-flex align-items-center justify-content-center">
+		                      <i class="icon-quote-left"></i>
+		                    </span>
+		                  </div>
+		                  <div class="text ml-md-4">
+		                    <p class="mb-5">Namlea menawarkan kombinasi sempurna antara keindahan alam dan kekayaan budaya. Setiap sudut pulau ini mempesona. Terima kasih Namlea Travel atas perjalanan yang tak terlupakan.</p>
+		                    <p class="name">Windy</p>
+		                    <span class="position">pengunjung dari Ilath</span>
+		                  </div>
+		                </div>
+		              </div>
+		              <div class="item">
+		                <div class="testimony-wrap d-flex">
+		                  <div class="user-img mb-5" style="background-image: url(images/cinta2.jpg)">
+		                    <span class="quote d-flex align-items-center justify-content-center">
+		                      <i class="icon-quote-left"></i>
+		                    </span>
+		                  </div>
+		                  <div class="text ml-md-4">
+		                    <p class="mb-5">Jika Anda mencari destinasi yang menenangkan dengan pemandangan alam yang memukau, Namlea adalah jawabannya. Pengalaman saya di sini sangat luar biasa, terima kasih Namlea Trave.</p>
+		                    <p class="name">Zulvanita</p>
+		                    <span class="position">pengunjung dari Batabual</span>
+		                  </div>
+		                </div>
+		              </div>
+		              <div class="item">
+		                <div class="testimony-wrap d-flex">
+		                  <div class="user-img mb-5" style="background-image: url(images/cinta3.jpg)">
+		                    <span class="quote d-flex align-items-center justify-content-center">
+		                      <i class="icon-quote-left"></i>
+		                    </span>
+		                  </div>
+		                  <div class="text ml-md-4">
+		                    <p class="mb-5">Namlea adalah tempat yang menakjubkan dengan keindahan alam yang masih alami. Terima kasih kepada Namlea Travel atas layanan yang luar biasa dan panduan yang sangat membantu.</p>
+		                    <p class="name">yana</p>
+		                    <span class="position">pengunjung dari Batabual</span>
+		                  </div>
+		                </div>
+		              </div>
+		            </div>
+		          </div>
+		        </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="ftco-section">
+    	<div class="container">
+				<div class="row justify-content-start mb-5 pb-3">
+          <div class="col-md-7 heading-section ftco-animate">
+          	<span class="subheading">KuLiner Kota Namlea</span>
+            <h2 class="mb-4"><strong>Tempat</strong>Makan</h2>
+          </div>
+        </div>    		
+    		<div class="row">
+    			<div class="col-md-6 col-lg-3 ftco-animate">
+    				<div class="destination">
+    					<a href="kuliner.html" class="img img-2 d-flex justify-content-center align-items-center" style="background-image: url(images/citra\ wangi\ resto1.jpg);">
+    						<div class="icon d-flex justify-content-center align-items-center">
+    							<span class="icon-search2"></span>
+    						</div>
+    					</a>
+    					<div class="text p-3">
+    						<h3><a href="kuliner.html">Citra Wangi Resto</a></h3>
+    						<p class="rate">
+    							<i class="icon-star"></i>
+    							<i class="icon-star"></i>
+    							<i class="icon-star"></i>
+    							<i class="icon-star"></i>
+    							<i class="icon-star-o"></i>
+    						</p>
+    						<p>Alamat: Jl. Pattimura, Namlea, Pulau Buru, Maluku</p>
+    						<hr>
+							
+    						<p class="bottom-area d-flex">	
+    						<span class="ml-auto"><a href="kuliner.html">Baca Lebih Lanjut</a></span>
+    						</p>
+    					</div>
+    				</div>
+    			</div>
+    			<div class="col-md-6 col-lg-3 ftco-animate">
+    				<div class="destination">
+    					<a href="kuliner -mamiri.html" class="img img-2 d-flex justify-content-center align-items-center" style="background-image: url(images/warung\ sambal\ bakar6.jpg);">
+    						<div class="icon d-flex justify-content-center align-items-center">
+    							<span class="icon-search2"></span>
+    						</div>
+    					</a>
+    					<div class="text p-3">
+    						<h3><a href="kuliner -mamiri.html">Angin Mamiri</a></h3>
+    						<p class="rate">
+    							<i class="icon-star"></i>
+    							<i class="icon-star"></i>
+    							<i class="icon-star"></i>
+    							<i class="icon-star"></i>
+    							<i class="icon-star-o"></i>
+    						</p>
+    						<p>Alamat Kota Namlea dekat Grand Sarah Hotel kec,Namlea </p>
+    						<hr>
+    						<p class="bottom-area d-flex">
+    							
+    							<span class="ml-auto"><a href="kuliner -mamiri.html">Baca Lebih Lanjut</a></span>
+    						</p>
+    					</div>
+    				</div>
+    			</div>
+    			<div class="col-md-6 col-lg-3 ftco-animate">
+    				<div class="destination">
+    					<a href="kuliner -halo-cofe.html" class="img img-2 d-flex justify-content-center align-items-center" style="background-image: url(images/kafe\ halo\ kofe1.jpg);">
+    						<div class="icon d-flex justify-content-center align-items-center">
+    							<span class="icon-search2"></span>
+    						</div>
+    					</a>
+    					<div class="text p-3">
+    						<h3><a href="kuliner -halo-cofe.html">Kafe Halo Kofi</a></h3>
+    						<p class="rate">
+    							<i class="icon-star"></i>
+    							<i class="icon-star"></i>
+    							<i class="icon-star"></i>
+    							<i class="icon-star"></i>
+    							<i class="icon-star-o"></i>
+    						</p>
+    						<p>Alamat Namlea, Kec. Namlea, Kabupaten Buru, Maluku</p>
+    						<hr>
+    						<p class="bottom-area d-flex">
+    							 
+    							<span class="ml-auto"><a href="kuliner -halo-cofe.html">Baca Lebih Lanjut</a></span>
+    						</p>
+    					</div>
+    				</div>
+    			</div>
+    			<div class="col-md-6 col-lg-3 ftco-animate">
+    				<div class="destination">
+    					<a href="kuliner -dinasty-cofe.html" class="img img-2 d-flex justify-content-center align-items-center" style="background-image: url(images/dinasty\ coffe2.jpg);">
+    						<div class="icon d-flex justify-content-center align-items-center">
+    							<span class="icon-search2"></span>
+    						</div>
+    					</a>
+    					<div class="text p-3">
+    						<h3><a href="kuliner -dinasty-cofe.html">Dinasty Coffe</a></h3>
+    						<p class="rate">
+    							<i class="icon-star"></i>
+    							<i class="icon-star"></i>
+    							<i class="icon-star"></i>
+    							<i class="icon-star"></i>
+    							<i class="icon-star-o"></i>
+    						</p>
+    						<p>Alamat  Namlea, Kec. Namlea, Kabupaten Buru, Maluku</p>
+    						<hr>
+    						<p class="bottom-area d-flex">
+    							
+    							<span class="ml-auto"><a href="kuliner -dinasty-cofe.html">Baca Lebih Lanjut</a></span>
+    						</p>
+    					</div>
+    				</div>
+    			</div>
+    		</div>
+    	</div>
+    </section>
+
+    <section class="ftco-section bg-light">
+      <div class="container">
+        <div class="row justify-content-start mb-5 pb-3">
+          <div class="col-md-7 heading-section ftco-animate">
+            <span class="subheading">Recent Blog</span>
+            <h2><strong>Tips</strong> &amp; Articles</h2>
+          </div>
+        </div>
+        <div class="row d-flex">
+          <div class="col-md-3 d-flex ftco-animate">
+            <div class="blog-entry align-self-stretch">
+              <a href="blog.html" class="block-20" style="background-image: url('images/aer\ waeura2.jpg');">
+              </a>
+              <div class="text p-4 d-block">
+              	<span class="tag">Articles</span>
+                <h3 class="heading mt-3"><a href="blog.html">Aer Terjun Waeura</a></h3>
+                <div class="meta mb-3">
+                  <div>June 04, 2024</div>
+                  <div>Wisata Buru (Namlea)</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3 d-flex ftco-animate">
+            <div class="blog-entry align-self-stretch">
+              <a href="blog.html" class="block-20" style="background-image: url('images/merahputih1.jpg');">
+              </a>
+              <div class="text p-4">
+              	<span class="tag">Articles</span>
+                <h3 class="heading mt-3"><a href="blog.html">Pantai Merah Putih</a></h3>
+                <div class="meta mb-3">
+                  <div>June 04, 2024</div>
+                  <div>Wisata Buru (Namlea)</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3 d-flex ftco-animate">
+            <div class="blog-entry align-self-stretch">
+              <a href="blog.html" class="block-20" style="background-image: url('images/laut1.jpg');">
+              </a>
+              <div class="text p-4">
+              	<span class="tag">Articles</span>
+                <h3 class="heading mt-3"><a href="blog.html">Pantai Jikumerasa</a></h3>
+                <div class="meta mb-3">
+                  <div>June 04, 2024</div>
+                  <div>Wisata Buru Namlea</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3 d-flex ftco-animate">
+            <div class="blog-entry align-self-stretch">
+              <a href="blog.html" class="block-20" style="background-image: url('images/pantai\ baikolet3.jpg');">
+              </a>
+              <div class="text p-4">
+              	<span class="tag">Articles</span>
+                <h3 class="heading mt-3"><a href="blog.html">Pantai Baikolet</a></h3>
+                <div class="meta mb-3">
+                  <div>June 04, 2024</div>
+                  <div>Wisata Buru (Namlea)</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+		
+		
+
+    <footer class="ftco-footer ftco-bg-dark ftco-section">
+      <div class="container">
+        <div class="row mb-5">
+          <div class="col-md">
+            <div class="ftco-footer-widget mb-4">
+              <h2 class="ftco-heading-2">Wisata-Buru-Namlea</h2>
+              <p>Mengunjungi Namlea di Pulau Buru akan membawa Anda ke destinasi yang eksotis dengan keindahan alam yang pristine, suasana yang serene, dan pengalaman petualangan yang adventurous.</p>
+              <ul class="ftco-footer-social list-unstyled float-md-left float-lft mt-5">
+                <li class="ftco-animate"><a href="https://www.youtube.com/watch?v=hAv9krMIVPU" target="blank"><span class="icon-youtube"></span></a></li>
+                <li class="ftco-animate"><a href="https://web.facebook.com/DinasPariwisataBuru/?locale=id_ID&_rdc=1&_rdr"><span class="icon-facebook"></span></a></li>
+                <li class="ftco-animate"><a href="https://www.instagram.com/explore_bupolo/?utm_source=ig_embed"><span class="icon-instagram"></span></a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-md">
+            <div class="ftco-footer-widget mb-4 ml-md-5">
+              <h2 class="ftco-heading-2">Information</h2>
+              <ul class="list-unstyled">
+                <li><a href="about.html" class="py-2 d-block">About</a></li>
+                <li><a href="index.html" class="py-2 d-block">Home</a></li>
+                <li><a href="tour.html" class="py-2 d-block">Tour</a></li>
+                <li><a href="hotel.html" class="py-2 d-block">Hotels</a></li>
+                <li><a href="kuliner.html" class="py-2 d-block">Kuliner</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-md">
+             <div class="ftco-footer-widget mb-4">
+              <h2 class="ftco-heading-2">Information</h2>
+              <ul class="list-unstyled">
+                <li><a href="blog.html" class="py-2 d-block">blog</a></li>
+                <li><a href="blog-single.html" class="py-2 d-block">Pantai Jikumerasa</a></li>
+                <li><a href="blog-single1.html" class="py-2 d-block">Bukit Tatanggo</a></li>
+                <li><a href="blog-single2.html" class="py-2 d-block">Pantai Baikolet</a></li>
+                <li><a href="blog-single3.html" class="py-2 d-block">Pantai Merah Putih</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-md">
+            <div class="ftco-footer-widget mb-4">
+            	<h2 class="ftco-heading-2">Have a Questions?</h2>
+            	<div class="block-23 mb-3">
+	              <ul>
+	                <li><span class="icon icon-map-marker"></span><span class="text">KOta-Namlea, Kab. Buru Maluku.</span></li>
+	                <li><span class="icon icon-phone"></span><span class="text">+(62) 852-9546-0083</span></li>
+	                <li><span class="icon icon-envelope"></span><span class="text">pariwisataburu@gmail.com</span></li>
+	              </ul>
+	            </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-12 text-center">
+
+            <p><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+  Copyright &copy;<script>document.write(new Date().getFullYear());</script> Wisata-Buru-Namlea. All rights reserved | Website designed and developed <i class="icon-heart" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Elita Wailusu</a>
+  <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p>
+          </div>
+        </div>
+      </div>
+    </footer>
+    
+  
+
+  <!-- loader -->
+  <div id="ftco-loader" class="show fullscreen"><svg class="circular" width="48px" height="48px"><circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee"/><circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10" stroke="#F96D00"/></svg></div>
+
+
+  <script src="js/jquery.min.js"></script>
+  <script src="js/jquery-migrate-3.0.1.min.js"></script>
+  <script src="js/popper.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/jquery.easing.1.3.js"></script>
+  <script src="js/jquery.waypoints.min.js"></script>
+  <script src="js/jquery.stellar.min.js"></script>
+  <script src="js/owl.carousel.min.js"></script>
+  <script src="js/jquery.magnific-popup.min.js"></script>
+  <script src="js/aos.js"></script>
+  <script src="js/jquery.animateNumber.min.js"></script>
+  <script src="js/bootstrap-datepicker.js"></script>
+  <script src="js/jquery.timepicker.min.js"></script>
+  <script src="js/scrollax.min.js"></script>
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBVWaKrjvy3MaE7SQ74_uJiULgl1JY0H2s&sensor=false"></script>
+  <script src="js/google-map.js"></script>
+  <script src="js/main.js"></script>
+    
+  </body>
+</html>
